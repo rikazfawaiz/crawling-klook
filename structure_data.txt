@@ -1,0 +1,241 @@
+[
+    {
+        "error": {
+            "code": "",
+            "message": ""
+        },
+        "result": {
+            "cache_expired": 900,
+            "section": [
+                {
+                    "view_type": "flight_route_card",
+                    "body": {
+                        "display_origin_position": "CGK 1",
+                        "origin_ruid": "CGK",
+                        "des_ruid": "DPS",
+                        "display_destination_position": "DPS D",
+                        "display_departure_date": "10 Mar 2025",
+                        "departure_time": "15:30",
+                        "display_arrival_date": "10 Mar 2025",
+                        "arrival_time": "18:25",
+                        "display_duration": "1h 55m",
+                        "nday": 0,
+                        "display_price": "HK$ 359.0",
+                        "amount": 359,
+                        "display_total_price": "",
+                        "ticket_select_api_path": "/v3/flightbffserv/ticket/select",
+                        "overview_api_path": "/v2/flightbffserv/route/overview",
+                        "transfer_stopover": "Direct flight",
+                        "itinerary_id": "d08a0560f80e0d2266a9bcac6441ab04",
+                        "selected": false,
+                        "display_round_departure_info": "",
+                        "display_round_return_info": "",
+                        "display_departure_desc": "",
+                        "display_return_desc": "",
+                        "display_desc": "",
+                        "display_ticket_info": "6 tickets left",
+                        "default_sort": "price_low_high",
+                        "airline_icons": [
+                            {
+                                "airline_name": "PT. Indonesia AirAsia",
+                                "airline_icon": "https://res.klook.com/image/upload/airline/QZ.png",
+                                "airline": "QZ"
+                            }
+                        ],
+                        "itinerary_detail_param": {
+                            "search_condition": [
+                                {
+                                    "origin_position": "13055",
+                                    "destination_position": "13482",
+                                    "departure_date": "2025-03-10",
+                                    "seat_class": "Economy_PremiumEconomy",
+                                    "passengers": [
+                                        {
+                                            "passenger_type": "adult",
+                                            "count": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "routes": [
+                                {
+                                    "mark": "",
+                                    "duration": 115,
+                                    "segments": [
+                                        {
+                                            "seat_class": "ECONOMY",
+                                            "sub_seat_class": "X",
+                                            "airline": "QZ",
+                                            "arrival": "DPS",
+                                            "arrival_date": "2025-03-10",
+                                            "arrival_time": "18:25",
+                                            "departure": "CGK",
+                                            "departure_date": "2025-03-10",
+                                            "departure_time": "15:30",
+                                            "flight_num": "808",
+                                            "stopover": "",
+                                            "departure_terminal": "1",
+                                            "arrival_terminal": "D",
+                                            "duration": 115,
+                                            "stay_time": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "price": {
+                                "currency": "",
+                                "amount": ""
+                            }
+                        },
+                        "section": null
+                    }
+                },
+                {....}
+            ],
+            "default_sort": "price_low_high",
+            "filter": {
+                "description": "",
+                "filter_sorts": [
+                    {
+                        "filter_sort_type": "filter",
+                        "filter_sort_type_name": "Filters",
+                        "filter_sort_items": [
+                            {
+                                "display_name": "Filters",
+                                "default_select": false
+                            }
+                        ]
+                    },
+                    {
+                        "filter_sort_type": "sort",
+                        "filter_sort_type_name": "Sort: Price (lowest)",
+                        "filter_sort_items": [
+                            {
+                                "display_name": "Latest departure first",
+                                "value": "time_late_early",
+                                "default_select": false
+                            },
+                            {
+                                "display_name": "Earliest departure first",
+                                "value": "time_early_late",
+                                "default_select": false
+                            },
+                            {
+                                "display_name": "Price (lowest)",
+                                "value": "price_low_high",
+                                "default_select": true
+                            }
+                        ]
+                    }
+                ],
+                "filter_section": [
+                    {
+                        "display_filter_item_name": "Popular filters",
+                        "filter_type": "popular",
+                        "allow_multiple_selected": true,
+                        "filter_details": [
+                            {
+                                "display_filter_detail_name": "Direct flights",
+                                "filter_detail_value": "direct_only",
+                                "default_select": false
+                            }
+                        ]
+                    },
+                    {
+                        "display_filter_item_name": "Airlines",
+                        "filter_type": "airline",
+                        "allow_multiple_selected": true,
+                        "filter_details": [
+                            {
+                                "display_filter_detail_name": "Garuda Indonesia",
+                                "filter_detail_value": "GA",
+                                "default_select": false
+                            },
+                            {
+                                "display_filter_detail_name": "PT. Citilink Indonesia",
+                                "filter_detail_value": "QG",
+                                "default_select": false
+                            },
+                            {
+                                "display_filter_detail_name": "PT. Indonesia AirAsia",
+                                "filter_detail_value": "QZ",
+                                "default_select": false
+                            },
+                            {
+                                "display_filter_detail_name": "Super Air Jet",
+                                "filter_detail_value": "IU",
+                                "default_select": false
+                            },
+                            {
+                                "display_filter_detail_name": "TransNusa",
+                                "filter_detail_value": "8B",
+                                "default_select": false
+                            }
+                        ]
+                    },
+                    {
+                        "display_filter_item_name": "Departure airports",
+                        "filter_type": "departure_airport",
+                        "allow_multiple_selected": false,
+                        "filter_details": [
+                            {
+                                "display_filter_detail_name": "Soekarno-Hatta International Airport(CGK)",
+                                "filter_detail_value": "CGK",
+                                "default_select": false
+                            },
+                            {
+                                "display_filter_detail_name": "Halim Perdanakusuma International Airport(HLP)",
+                                "filter_detail_value": "HLP",
+                                "default_select": false
+                            }
+                        ]
+                    },
+                    {
+                        "display_filter_item_name": "Arrival airports",
+                        "filter_type": "arrival_airport",
+                        "allow_multiple_selected": false,
+                        "filter_details": [
+                            {
+                                "display_filter_detail_name": "Ngurah Rai (Bali) International Airport(DPS)",
+                                "filter_detail_value": "DPS",
+                                "default_select": false
+                            }
+                        ]
+                    },
+                    {
+                        "display_filter_item_name": "Departure times",
+                        "filter_type": "start_time",
+                        "allow_multiple_selected": false,
+                        "filter_details": [
+                            {
+                                "display_filter_detail_name": "00:00",
+                                "filter_detail_value": "00:00",
+                                "default_select": true
+                            },
+                            {
+                                "display_filter_detail_name": "24:00",
+                                "filter_detail_value": "24:00",
+                                "default_select": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            "display_departure_head_info": null,
+            "display_return_head_info": null,
+            "journey_type": "oneway",
+            "process": {
+                "estimated_total": 2,
+                "current": 1,
+                "tokens": [
+                    "2_1",
+                    "2_2"
+                ],
+                "is_need_more": true,
+                "count": 10,
+                "search_tip": "Still searching...",
+                "search_found": "Tickets found:10"
+            }
+        },
+        "success": true
+    }

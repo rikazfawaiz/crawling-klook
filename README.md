@@ -9,10 +9,4 @@
 
 ### Output
 
-The result of running the script will produce two files in CSV and JSON formats.
-
-    The JSON file contains the raw data from the API.
-
-    The CSV file contains data that has been selected and formatted according to specific needs.
-
-In the JSON file, the data is unstructured because the API combines data for multiple days without a clear format. This is because, from the beginning, the JSON output was intended only as a sample to understand the structure of the data.
+The output of this result is saved in a CSV file format, and to view the structure of the API response data, refer to the `structure_data.txt` file

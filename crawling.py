@@ -61,17 +61,6 @@ class FlightCrawler:
         logging.info(f"{date} - API request completed in {elapsed_time:.2f} seconds.")
         return response.json() if response.text.strip() else None
 
-    def save_data_to_file(self, data: List[Dict], filename: str) -> None:
-        """Save data to a JSON file."""
-        start_time = time.time()
-        try:
-            with open(filename, "w", encoding="utf-8") as file:
-                json.dump(data, file, indent=4, ensure_ascii=False)
-            elapsed_time = time.time() - start_time
-            logging.info(f"Saving data to {filename} took {elapsed_time:.2f} seconds.")
-        except IOError as e:
-            logging.error(f"Error saving data to file: {e}")
-
     def generate_date_range(self, start_date: str, end_date: str) -> List[str]:
         """Generate a list of dates between start_date and end_date."""
         start = datetime.strptime(start_date, "%Y-%m-%d")
@@ -265,8 +254,6 @@ class FlightCrawler:
         api_fetch_elapsed_time = time.time() - api_fetch_start_time
         logging.info(f"Fetching data from API took {api_fetch_elapsed_time:.2f} seconds.")
         
-        self.save_data_to_file(all_data, "flight_data_raw.json")
-        
         flight_df = self.extract_flight_data(all_data)
         
         # Fetch currency data and convert amounts to IDR
@@ -287,7 +274,7 @@ if __name__ == "__main__":
     origin      = "13055"
     destination = "13482"
     start_date  = "2025-03-10"
-    end_date    = "2025-03-30"
+    end_date    = "2025-03-12"
     seat_class  = "Economy_PremiumEconomy" 
     # seat_class  = "Business_First"
     passengers  = [
