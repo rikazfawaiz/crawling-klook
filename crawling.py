@@ -287,12 +287,16 @@ if __name__ == "__main__":
     origin      = "13055"
     destination = "13482"
     start_date  = "2025-03-10"
-    end_date    = "2025-03-15"
+    end_date    = "2025-03-30"
     seat_class  = "Economy_PremiumEconomy" 
     # seat_class  = "Business_First"
     passengers  = [
-        {"count": 2, "passenger_type": "adult", "name": "Adult"},
-        {"count": 1, "passenger_type": "child", "name": "Child"}
+        {"count": 2, "passenger_type": "adult", "name": "Adult"}
+        # ,{"count": 1, "passenger_type": "child", "name": "Child"}
+        # ,{"count":1,"passenger_type":"infant","name":"Infant"}
     ]
     
     crawler.crawl_flights(origin, destination, start_date, end_date, seat_class, passengers)
+
+
+    
