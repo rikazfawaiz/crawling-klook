@@ -228,7 +228,7 @@ class FlightCrawler:
         
         return df
 
-    def crawl_flights(self, origin: str, destination: str, start_date: str, end_date: str) -> None:
+    def crawl_flights(self, origin: str, destination: str, start_date: str, end_date: str, seat_class: str, passengers: List[Dict] = None) -> None:
         """Crawl flight data for the given origin, destination, and date range."""
         program_start_time = time.time()
         
@@ -248,12 +248,8 @@ class FlightCrawler:
                         "origin_position": origin,
                         "destination_position": destination,
                         "departure_date": date,
-                        "seat_class": "Economy_PremiumEconomy",
-                        "passengers": [
-                            {"count": 1, "passenger_type": "adult", "name": "Adult"},
-                            {"count": 1, "passenger_type": "child", "name": "Child"},
-                            {"count": 1, "passenger_type": "infant", "name": "Infant"}
-                        ],
+                        "seat_class": seat_class,
+                        "passengers": passengers,
                         "is_from_filter": False,
                         "sort_type": "price_low_high"
                     }
@@ -288,9 +284,15 @@ class FlightCrawler:
 if __name__ == "__main__":
     crawler = FlightCrawler()
 
-    origin = "13055"
+    origin      = "13055"
     destination = "13482"
-    start_date = "2025-03-05"
-    end_date = "2025-03-10"
+    start_date  = "2025-03-10"
+    end_date    = "2025-03-15"
+    seat_class  = "Economy_PremiumEconomy" 
+    # seat_class  = "Business_First"
+    passengers  = [
+        {"count": 2, "passenger_type": "adult", "name": "Adult"},
+        {"count": 1, "passenger_type": "child", "name": "Child"}
+    ]
     
-    crawler.crawl_flights(origin, destination, start, end_date)
+    crawler.crawl_flights(origin, destination, start_date, end_date, seat_class, passengers)
